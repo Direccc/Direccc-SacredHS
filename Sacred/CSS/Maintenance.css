@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper1{
+    font-weight: bold;
+    height: 50px;
+    background-color: #da121a;
+    width: 100%;
+    display: flex;
+
+}
+
+.wrapper1 li{
+    list-style: none;
+    display: inline-block;
+}
+
+.wrapper1 a{
+    text-decoration: none;
+}
+
+.Menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    float: left;
+}
+
+.Menu ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Menu ul :hover {
+  border-bottom: solid 5px black;
+  transition: all 0.3s ease;
+}
+
+.Menu ul li :hover {
+  border-bottom: none;
+}
+
+.Menu ul li a :hover {
+  border-bottom: none;
+}
+
+.Menu ul li{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.Menu li a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+}
+
+
+.Menu2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    float: right;
+}
+
+.Icons{
+    margin-right: 20px;
+}
+
+.Links{
+    color: white;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Menu2Wrapper{
+  padding-right: 20px;
+  border-right: solid white 1px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  height: 100%;
+}
+
+.Menu .Menu2Wrapper:hover{
+  border-bottom: none;
+}
+
+.Schools img{
+    height: 80px;
+    width: 80px;
+}
+
+.Schools{
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    width: auto;
+    background-color: black;
+}
+
+
+
+.search-box{
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.2);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .search-box.active{
+    margin-left: 0px;
+    width: 350px;
+  }
+  .search-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color:  rgb(218, 18, 26);
+    outline: none;
+    padding: 0 40px 0 10px;
+    font-size: 18px;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .search-box input.active{
+    opacity: 1;
+  }
+  .search-box input::placeholder{
+    color: #a6a6a6;
+  }
+  .search-box .search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .search-box .search-icon.active{
+    right: 5px;
+    height: 40px;
+    line-height: 30px;
+    width: 40px;
+    font-size: 20px;
+    background: rgba(0,0,0,0);
+    color: #fff;
+    transform: translateY(-50%) rotate(360deg);
+  }
+  .search-box .cancel-icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: rgba(0,0,0,0);
+    cursor: pointer;
+    transition: all 0.3s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .search-box .cancel-icon.active{
+    color: white;
+    right: -10px;
+    transform: translateY(-50%) rotate(360deg);
+  }
+  .search-box .search-data{
+    text-align: center;
+    padding-top: 7px;
+    color: #fff;
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+  .search-box .search-data.active{
+    display: none;
+  }
+
+  .wrapper2{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+  }
+
+.School{
+    width: 35%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.School img{
+    width: 350px;
+    height: 150px;
+  }
+
+.Menu3{
+    position: relative;
+    float: right;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.Menu3 ul :hover{
+    border-bottom: solid 5px red;
+    transition: all 0.3s ease;
+}
+
+.Menu3 ul li a:hover{
+    border-bottom: none;
+}
+
+.Menu3 ul li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 20px;
+    list-style: none;
+    position: relative;
+}
+
+.Menu3 li a{
+    text-decoration: none;
+    color: black;
+}
+
+.Menu3 ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.LN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.SchoolName{
+    font-size: large;
+    white-space: nowrap;
+  }
+.background-clip{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.background-clip video{
+  height:fit-content;
+  width: 100%;
+}
+
+.dropdown{
+    display: none;
+    width: 240px;
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    background-color: rgba(17, 18, 20, 0.9);
+}
+
+
+.Menu3 ul li:hover .dropdown{
+    margin-top: 5px;
+    border-bottom: none;
+    display: block;
+}
+
+.Menu3 ul li:hover ul li{
+  border-bottom: solid 2px rgba(119, 126, 133, 0.4);
+}
+
+.Menu3 ul li:hover ul{
+  border-bottom: solid 2px rgba(0,0,0,0);
+}
+
+.dropdown ul{
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.dropdown ul li{
+    margin-right: 0px;
+    width: 100%;
+    padding: 10px;
+}
+
+.dropdown ul li a {
+    width: 100%;
+    color: white;
+}
+
+.dropdown ul :hover{
+  color: #E7AC2C;
+}
+
+.Menu2 .Menu3Wrapper :hover{
+  border-bottom: solid 5px black;
+  transition: all 0.3s ease;
+}
+
+.Menu2 .Menu3Wrapper .dropdown-content :hover  {
+  color: #E7AC2C;
+  border-bottom: solid 2px rgba(119, 126, 133, 0.4);
+  transition: 0.3s ease;
+}
+
+.dropdown-content-show :hover {
+  border-bottom: none;
+}
+
+.Menu2 .Menu3Wrapper .Links :hover{
+  border-bottom:none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.dropdown-content {
+  top: 50px;
+  display: none;
+  position: absolute;
+  background-color: rgba(17, 18, 20, 0.9);
+  min-width: 160px;
+  z-index: 1;
+  border-bottom: none;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+
+.dropdown-content a {
+  border-bottom: solid 2px rgba(119, 126, 133, 0.4);
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 240px;
+}
+
+.dropdown a:hover {
+  background-color: rgba(17, 18, 20, 0.9);
+  border-bottom: none;
+}
+
+.show {
+  display: block;
+}
+
+.dropbtn{
+  color: white;  
+  height: 100%;
+  border-bottom: none;
+  background-color:#da121a;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.Menu3Wrapper{
+    padding-right: 20px;
+    border-left: solid white 1px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.wrapper3{
+    width: 100%;
+    height: 700px;
+    z-index: 1;
+    background-image: url(Imgmaintenance.png);
+    background-color: rgba(231, 172, 44, 0.14);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+  }
+
+  .Apologies{
+    padding-top: 200px;
+    height: 100%;
+    line-height: 2em;
+    width: 70%;
+    text-align: center;
+  }
+
+  .Apologies h1{
+    margin-bottom: 30px;
+  }

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Sacred Heart School of Cavite, Inc - Recoletos de Alfonso</title>
+    <link rel="icon" href="/Images/SacredLogo.png">
+    <link rel="stylesheet" href="/CSS/Regs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/f9f4b4873e.js" crossorigin="anonymous"></script>
+    <script src="/JavaScript/Sacred.js"></script>
+</head>
+<body>
+    <div class="Parent">
+        <div class="wrapper1">
+            <div class="Menu">
+                <ul>
+    
+                <div class="Menu2Wrapper">
+    
+                    <li><a href="#">ALUMNI</a></li>
+    
+                </div>
+                <div class="Menu2Wrapper">    
+    
+                    <li><a href="#">STAG'S HERD</a></li>
+                </div>
+    
+                <div class="Menu2Wrapper">    
+                    <li><a href="#">PARENTS</a></li>
+                </div>
+    
+                </ul>
+            </div>
+    
+            <div class="Menu2">
+                <div class="Menu3Wrapper">
+                    <button onclick="myFunction()" class="dropbtn">QUICK LINKS</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Ask Us</a>
+                        <a href="#about">Calendars</a>
+                        <a href="#contact">Cerebro</a>
+                        <a href="#contact">Visit Us</a>
+                        <a href="#contact">Faculty</a>
+                      </div>   
+                    </div>
+                
+    
+                <div class="Schools">
+                    <img src="/Images/GameOn.png" alt="">
+                    PARISH & SCHOOLS
+                </div>
+                
+                <div class="search-box">
+                            <input type="text" placeholder="Search">
+                            <div class="search-icon">
+                              <i class="fas fa-search"></i>
+                            </div>
+                      <div class="cancel-icon">
+                              <i class="fas fa-times"></i>
+                            </div>
+                      <div class="search-data">
+                      </div>
+                      </div>
+                      <script>
+                            const searchBox = document.querySelector(".search-box");
+                            const searchBtn = document.querySelector(".search-icon");
+                            const cancelBtn = document.querySelector(".cancel-icon");
+                            const searchInput = document.querySelector("input");
+                            const searchData = document.querySelector(".search-data");
+                            searchBtn.onclick =()=>{
+                              searchBox.classList.add("active");
+                              searchBtn.classList.add("active");
+                              searchInput.classList.add("active");
+                              cancelBtn.classList.add("active");
+                              searchInput.focus();
+                              if(searchInput.value != ""){
+                                var values = searchInput.value;
+                                searchData.classList.remove("active");
+                                searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
+                              }else{
+                                searchData.textContent = "";
+                              }
+                            }
+                            cancelBtn.onclick =()=>{
+                              searchBox.classList.remove("active");
+                              searchBtn.classList.remove("active");
+                              searchInput.classList.remove("active");
+                              cancelBtn.classList.remove("active");
+                              searchData.classList.toggle("active");
+                              searchInput.value = "";
+                            }
+                          </script>
+                    </div>    
+            </div>
+        </div>
+    
+        <div class="wrapper2">
+            <div class="School">
+               <a href="/HTML/Sacred.html"><img src="/Images/Sacred.png" alt=""></a> 
+            </div>
+    
+            <div class="Menu3">
+                <ul>
+                    <li> <a href="/HTML/Sacred.html">HOME</a></li>
+                    <li><a href="#">ABOUT US <i class="fa-solid fa-caret-down"></i></a>
+                        
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Milestones</a></li>
+                                <li><a href="#">SSC-R Seal and Hymn</a></li>
+                                <li><a href="#">SSC-R President</a></li>
+                                <li><a href="#">Accreditation</a></li>
+                                <li><a href="#">Partners and Linkages</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Facilities</a></li>
+                            </ul>
+    
+                        </div>
+    
+                    </li>
+                    <li><a href="#">ACADEMICS</a></li>
+                    <li><a href="#">ADMISSIONS</a></li>
+                    <li><a href="#">OFFICES</a></li>
+                    <li><a href="#">CAMPUS LIFE</a></li>
+                    <li><a href="#">RESEARCH</a></li>
+                    <li><a href="#">NEWS</a></li>
+    
+                </ul>
+            </div>  
+        </div>
+
+        <div class="Wrapper3">
+            <div class="container">
+                <div>
+                <h3>Registration Form</h3>
+                </div>
+
+                <div class="Notice">
+                    <div>Notice: All labels with <font style="color: red; font-weight: bold; font-size: 15px;">*</font> should be answered.</label></div>
+                </div>
+
+                <div class="Fullname">
+                <form action="/action_page.php">
+                    <label for="fname">Full name<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" placeholder="Surname / First Name / Middle Initial" id="fname" name="fname">
+                    <label for="fname">Learner Reference Number (LRN)<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Mother tongue<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+
+                    <div><h4>Student's Address </h4></div>
+
+                    
+                    <label for="fname">Province<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Municipality<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Street Address<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                </form>
+                </div>
+
+                <div class="Parents">
+
+                    <div><h4>Parents/Guardian's Information</h4></div>
+
+                    <div><h5>Mother</h5></div>
+
+                    <label for="fname">Mother<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" placeholder="Maiden Name" id="fname" name="fname">
+                    <label for="fname">Occupation<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Monthly Income<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Contact Number<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+
+                    <div><h5>Father</h5></div>
+
+                    <label for="fname">Father<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Occupation<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Monthly Income<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Contact Number<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+
+                    <div><h5>Guardian</h5></div>
+
+                    <label for="fname">Guardian's Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Guardian's relation to the Student</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Guardian's Occupation</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Monthly Income</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="fname">Guardian's Contact Number</label>
+                    <input type="text" id="fname" name="fname">
+
+                </div>
+
+                <div class="Education">
+                    <div><h4>Educational Background</h4></div>
+
+                    <label for="fname">Kindergarten</label>
+                    <input type="text" placeholder="School Name - Year Graduated" id="fname" name="fname">
+                    <label for="fname">Elementary<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" placeholder="School Name - Year Graduated" id="fname" name="fname">
+                    <label for="fname">High-School<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" placeholder="School Name - Year Graduated" id="fname" name="fname">
+                    <label for="fname">Schools Awards (if applicable)<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname">
+
+                </div>
+
+                <div class="sources">
+
+                    <div><h4>Financial Supports</h4></div>
+
+                        <p>Sources of financial support for education Senior High School:(Click all applicable)<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></p>
+                    <form action="/action_page.php">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Parents</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Guardian</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> Brother/Sister</label><br>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Scholarships</label><br>
+                        <div class="last"><label for="vehicle1"> Other, Please Specify</label>
+                        <input type="text" id="fname" name="fname"></div>
+                
+
+                      </form>
+                </div>
+
+                <div class="Submit">
+                    <div class="Submithover">
+                <input type="submit" value="Submit">
+                    </div>
+                </div>
+                 
+            </div>
+
+        </div>
+</body>
+</html>

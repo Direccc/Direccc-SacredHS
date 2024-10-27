@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Sacred Heart School of Cavite, Inc - Recoletos de Alfonso</title>
+    <link rel="icon" href="/Images/SacredLogo.png">
+    <link rel="stylesheet" href="/CSS/Admissions.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/f9f4b4873e.js" crossorigin="anonymous"></script>
+    <script src="/JavaScript/Sacred.js"></script>
+</head>
+<body>
+    <div class="Parent">
+        <div class="wrapper1">
+            <div class="Menu">
+                <ul>
+    
+                <div class="Menu2Wrapper">
+    
+                    <li><a href="#">ALUMNI</a></li>
+    
+                </div>
+                <div class="Menu2Wrapper">    
+    
+                    <li><a href="#">STAG'S HERD</a></li>
+                </div>
+    
+                <div class="Menu2Wrapper">    
+                    <li><a href="#">PARENTS</a></li>
+                </div>
+    
+                </ul>
+            </div>
+    
+            <div class="Menu2">
+                <div class="Menu3Wrapper">
+                    <button onclick="myFunction()" class="dropbtn">QUICK LINKS</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Ask Us</a>
+                        <a href="#about">Calendars</a>
+                        <a href="#contact">Cerebro</a>
+                        <a href="#contact">Visit Us</a>
+                        <a href="#contact">Faculty</a>
+                      </div>   
+                    </div>
+                
+    
+                <div class="Schools">
+                    <img src="/Images/GameOn.png" alt="">
+                    PARISH & SCHOOLS
+                </div>
+                
+                <div class="search-box">
+                            <input type="text" placeholder="Search">
+                            <div class="search-icon">
+                              <i class="fas fa-search"></i>
+                            </div>
+                      <div class="cancel-icon">
+                              <i class="fas fa-times"></i>
+                            </div>
+                      <div class="search-data">
+                      </div>
+                      </div>
+                      <script>
+                            const searchBox = document.querySelector(".search-box");
+                            const searchBtn = document.querySelector(".search-icon");
+                            const cancelBtn = document.querySelector(".cancel-icon");
+                            const searchInput = document.querySelector("input");
+                            const searchData = document.querySelector(".search-data");
+                            searchBtn.onclick =()=>{
+                              searchBox.classList.add("active");
+                              searchBtn.classList.add("active");
+                              searchInput.classList.add("active");
+                              cancelBtn.classList.add("active");
+                              searchInput.focus();
+                              if(searchInput.value != ""){
+                                var values = searchInput.value;
+                                searchData.classList.remove("active");
+                                searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
+                              }else{
+                                searchData.textContent = "";
+                              }
+                            }
+                            cancelBtn.onclick =()=>{
+                              searchBox.classList.remove("active");
+                              searchBtn.classList.remove("active");
+                              searchInput.classList.remove("active");
+                              cancelBtn.classList.remove("active");
+                              searchData.classList.toggle("active");
+                              searchInput.value = "";
+                            }
+                          </script>
+                    </div>    
+            </div>
+        </div>
+    
+        <div class="wrapper2">
+            <div class="School">
+                <a href="/HTML/Sacred.html"><img src="/Images/Sacred.png" alt=""></a>
+            </div>
+    
+            <div class="Menu3">
+                <ul>
+                    <li> <a href="/HTML/Sacred.html">HOME</a></li>
+                    <li><a href="#">ABOUT US <i class="fa-solid fa-caret-down"></i></a>
+                        
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Milestones</a></li>
+                                <li><a href="#">SSC-R Seal and Hymn</a></li>
+                                <li><a href="#">SSC-R President</a></li>
+                                <li><a href="#">Accreditation</a></li>
+                                <li><a href="#">Partners and Linkages</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Facilities</a></li>
+                            </ul>
+    
+                        </div>
+    
+                    </li>
+                    <li><a href="#">ACADEMICS</a></li>
+                    <li><a href="#">ADMISSIONS</a></li>
+                    <li><a href="#">OFFICES</a></li>
+                    <li><a href="#">CAMPUS LIFE</a></li>
+                    <li><a href="#">RESEARCH</a></li>
+                    <li><a href="#">NEWS</a></li>
+    
+                </ul>
+            </div>  
+        </div>
+    
+    <div class="Wrapper3">
+        <div class="Admissions">
+
+            <div class="SacredName">
+                SHS Pre-Registration
+            </div>
+            
+            
+            <div class="Form">
+
+                <div class="Enrolled">ENROLLED Last Semester? <a href="#">Click here.</a></div>
+                <div class="Notes">NOTE: Required fields are indicated <font style="color: red; font-weight: bold; font-size: 15px;">*</font></div>
+
+                <div class="Inner2">
+                <form action="/action_page.php">
+                    <p>Entrance Category</p>
+                    <div class="Inner2inner2">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">New Student</label>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">Cross Enrollee</label><br>
+                    </div>
+                    <div class="Inner2inner3">
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">Transferee</label>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">Returning Student</label>
+                    </div>
+                </div>
+
+                </form>
+
+                  <br>
+                  <br>
+                <div class="Inner3">
+
+                <form action="Students">
+
+                    <label for="fname">Student Number<font style="color: red; font-weight: bold; font-size: 15px;">*for returnees</font></label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="cars">Choose a Strand:</label>
+                    <br>
+                    <select id="cars">
+                      <option value="ABM">Accountancy, Business and Management</option>
+                      <option value="HUMMS">Humanities and Social Sciences</option>
+                      <option value="STEM">Science, Technology, Engineering and Mathematics</option>
+                    </select>
+
+                </form>
+
+                </div>
+                
+                <div class="StudentInfo"><h3>Student's Information</h3></div>
+                
+                <div class="Forumwrapper">
+
+                <form action="/action_page.php">
+                    <label for="fname">Last Name<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">First Name<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="fname">Middle Name</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="fname">Suffix</label>
+                    <input type="text" placeholder="II, Jr., Sr., etc." id="fname" name="fname"><br><br>
+                  </form>
+                </div>
+
+                <div class="Forumwrapper2">
+                <form action="/action_page.php">
+                    <div class="Innerwrapper">
+                    <p>Gender<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></p>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Male</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="html">Female</label>
+                    </div>
+                </form>
+                </div>
+
+                <div class="Forumwrapper3">
+
+                <form action="/action_page.php">
+                    <label for="fname">Birthdate<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label> (mm/dd/yyyy)</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                </form>
+
+                <form action="/action_page.php">
+                    <label for="fname">Mobile Number<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" placeholder="09XXXXXXXXX" id="fname" name="fname"><br><br>
+                </form>
+
+                <form action="/action_page.php">
+                    <label for="fname">Email Address<font style="color: red; font-weight: bold; font-size: 15px;">*</font></label></label>
+                    <input type="text" placeholder="@gmail.com" id="fname" name="fname"><br><br>
+                </form>
+
+                </div>
+
+                <div class="Submit">
+                    <div class="Submithover">
+                        <a href="Regs.html"><input type="submit" value= "Submit"></a> 
+                    </div>
+                </div>
+
+            
+
+            </div>
+        </div>    
+        <div class="Container">
+            <div class="ContainerIns">
+            <h3>COLLEGE Pre-Registration</h3>
+    
+            Welcome to Sacred Heart School of Cavite, Inc - Recoletos de Alfonso’s Online Registration. Please read the Registration Procedure carefully before submitting your application. Thank you very much!
+            <br>
+                
+            <div class="containerRegs">
+            <h3>Registration Procedure</h3>
+            1. Fill up the Pre-registration form <br>
+            2. Check your email for your temporary username and password <br>
+            3. After signing in, please fill up the student’s information sheet <br>
+            4. For new students, upload available requirements (you may skip this page if requirements are not yet available) <br>
+            5. Upload your picture (colored picture with white background) <br>
+            6. Check your email for registration confirmation and other instructions
+            </div>
+
+            </div>
+    
+        </div>
+    </div>
+
+    
+
+
+    </div>
+</body>
+</html>

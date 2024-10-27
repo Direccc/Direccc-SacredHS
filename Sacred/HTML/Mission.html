@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission, Vision and Goals - Sacred Heart School of Cavite, Inc - Recoletos de Alfonso</title>
+    <link rel="icon" href="/Images/SacredLogo.png">
+    <link rel="stylesheet" href="/CSS/Mission.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/f9f4b4873e.js" crossorigin="anonymous"></script>
+    <script src="/JavaScript/Sacred.js"></script>
+</head>
+<body>
+    <div class="Parent">
+        <div class="wrapper1">
+            <div class="Menu">
+                <ul>
+    
+                <div class="Menu2Wrapper">
+    
+                    <li><a href="#">ALUMNI</a></li>
+    
+                </div>
+                <div class="Menu2Wrapper">    
+    
+                    <li><a href="#">STAG'S HERD</a></li>
+                </div>
+    
+                <div class="Menu2Wrapper">    
+                    <li><a href="#">PARENTS</a></li>
+                </div>
+    
+                </ul>
+            </div>
+    
+            <div class="Menu2">
+                <div class="Menu3Wrapper">
+                    <button onclick="myFunction()" class="dropbtn">QUICK LINKS</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Ask Us</a>
+                        <a href="#about">Calendars</a>
+                        <a href="#contact">Cerebro</a>
+                        <a href="#contact">Visit Us</a>
+                        <a href="#contact">Faculty</a>
+                      </div>   
+                    </div>
+                
+    
+                <div class="Schools">
+                    <img src="/Images/GameOn.png" alt="">
+                    PARISH & SCHOOLS
+                </div>
+                
+                <div class="search-box">
+                            <input type="text" placeholder="Search">
+                            <div class="search-icon">
+                              <i class="fas fa-search"></i>
+                            </div>
+                      <div class="cancel-icon">
+                              <i class="fas fa-times"></i>
+                            </div>
+                      <div class="search-data">
+                      </div>
+                      </div>
+                      <script>
+                            const searchBox = document.querySelector(".search-box");
+                            const searchBtn = document.querySelector(".search-icon");
+                            const cancelBtn = document.querySelector(".cancel-icon");
+                            const searchInput = document.querySelector("input");
+                            const searchData = document.querySelector(".search-data");
+                            searchBtn.onclick =()=>{
+                              searchBox.classList.add("active");
+                              searchBtn.classList.add("active");
+                              searchInput.classList.add("active");
+                              cancelBtn.classList.add("active");
+                              searchInput.focus();
+                              if(searchInput.value != ""){
+                                var values = searchInput.value;
+                                searchData.classList.remove("active");
+                                searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
+                              }else{
+                                searchData.textContent = "";
+                              }
+                            }
+                            cancelBtn.onclick =()=>{
+                              searchBox.classList.remove("active");
+                              searchBtn.classList.remove("active");
+                              searchInput.classList.remove("active");
+                              cancelBtn.classList.remove("active");
+                              searchData.classList.toggle("active");
+                              searchInput.value = "";
+                            }
+                          </script>
+                    </div>    
+            </div>
+        </div>
+    
+        <div class="wrapper2">
+            <div class="School">
+                <a href="/HTML/Sacred.html"><img src="/Images/Sacred.png" alt=""></a>
+            </div>
+    
+            <div class="Menu3">
+                <ul>
+                    <li> <a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US <i class="fa-solid fa-caret-down"></i></a>
+                        
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Milestones</a></li>
+                                <li><a href="#">SSC-R Seal and Hymn</a></li>
+                                <li><a href="#">SSC-R President</a></li>
+                                <li><a href="#">Accreditation</a></li>
+                                <li><a href="#">Partners and Linkages</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Facilities</a></li>
+                            </ul>
+    
+                        </div>
+    
+                    </li>
+                    <li><a href="#">ACADEMICS</a></li>
+                    <li><a href="#">ADMISSIONS</a></li>
+                    <li><a href="#">OFFICES</a></li>
+                    <li><a href="#">CAMPUS LIFE</a></li>
+                    <li><a href="#">RESEARCH</a></li>
+                    <li><a href="#">NEWS</a></li>
+    
+                </ul>
+            </div>  
+        </div>
+
+        <div class="wrapper3">
+
+            <div class="containerbox">
+
+                <div class="box1">
+            <h3> MISSION <i class="fa-solid fa-scroll"></i></h3>
+                To actualize our vision we provide a positive culture and climate conducive to learning by building character schoolwide and creating a caring community thereby turning the school into a showcase for organization, discipline, service and achievements.
+                </div>
+
+                <div class="box1">
+            <h3> VISION <i class="fa-solid fa-lightbulb"></i></i></h3>
+                We envision to be a school of educated, cultured, virtuous leaders with healthy and sound minds, humble and understanding hearts that lead to a peaceful happy life, God-centered, humane, patriotic and environment friendly, all for the GLORY OF GOD.
+                </div>
+
+                <div class="box1">
+            <h3> GOALS <i class="fa-solid fa-flag"></i></h3>
+                Sacred Heart School of Cavite aims to help students have the true values and goals in life, overwhelmed by lively sentiments of faith, hope and love and imbued with a sense of willingness to serve God through mankind.
+                </div>
+
+            </div>
+        </div>
+        <div class="objectives">
+            <div class="Lastobj">
+            <h2>OBJECTIVES</h2>
+            </div>
+
+            <div class="objcontainer">
+
+            <div class="objectives2">
+                <h4>The following objectives are designed to bring about the fulfillment of this goal. </h4>
+                
+                </div>  
+
+                <div class="numbers">
+                1. To help and lead each student to a clear knowledge of God, through instructions, formations and programs of the school. <br>
+
+                2. To imbue in their minds and hearts the basic values for character development needed for their moral growth through the Word of the Week program of the        Changing Lives Character Curriculum and by offering other related school functions that tend toward the development of such. <br>
+  
+                3. To provide a technological experience with extra dimensions, finding ways to discover and unlock untapped resources and creativity and innovation in teachers, students and parents making them informed, responsible and productive citizens in the highly competitive world of INFORMATION TECHNOLOGY. <br>
+  
+                4. To provide students up-to-date information on how to keep themselves physically fit and in top notch condition by fostering a well-planned program in physical education. <br>
+
+                5. To keep students aware of their social, cultural and political responsibilitiees by offering them different co-curricular activities in the school that tend towards a deeper and dynamic involvement in communal affairs.
+                </div>  
+
+            </div>
+        </div>
+
+        
+</body>
