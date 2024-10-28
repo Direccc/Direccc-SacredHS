@@ -31,7 +31,7 @@ The project is organized into the following folders:
 
 3. **Open the main HTML file** in your browser to view the site locally:
    ```bash
-   open index.html
+   open Sacred.html
    ```
 
    Alternatively, you can drag the `index.html` file into your web browser to view it.
